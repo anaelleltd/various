@@ -1,0 +1,43 @@
+﻿
+/* CSS Document */
+#wrapper { width:960px; margin:0 auto; padding:1em; background-color:#999999; color: #000000;}
+#header {padding:1em; margin: 0 1.5em; background-color:#DBEE00; position: relative; float: left; color: #000000;}
+#container { padding:1em; margin: auto; background-color:#0df7fc; color: #000000;}
+#skipmenu {width:15%; padding: 0.5em; background-color: #DBEE00; color: #000000;}
+
+/*This is the main menu*/
+#nav {list-style-type: none; padding: 0; margin: 0.5em;}
+#nav li {float: left}
+#nav li a {display: inline-block; padding: 0.2em 0.3em; margin: 0 auto; border: outset; font-size: 1.3em; font-family: "DejaVu Sans Condensed", Helvetica, Arial;}
+
+/*These are the skip links*/
+#skiplinks {list-style-type: none; padding: 0; margin: 0; overflow: hidden;}
+#skiplinks li {float: left;}
+#skiplinks li a {display: inline-block; padding: 0 0.85em; font-size: 1.em; font-family: "DejaVu Sans Condensed", Helvetica, Arial;}
+a:visited {background-color: #F3F3F3; color: #551A8B; cursor: auto;}
+a:active {background-color: #000000; color: #EE0000;}
+a:hover {background-color: #ffffff; color: #000000;}
+
+/*Main content styling*/
+h1 {color: #000000; font-size: 2em; font-family: "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana;}
+h2 {color: #000000;}
+h3 {color: #000000;}
+p {color: #000000; font-size: 1em; font-family: "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana;}
+#table {background-color: #dbee00; color: #000000; font-size: 1em; font-family: "DejaVu Sans Condensed", Helvetica, Arial;}
+#form1 {background-color: #dbee00; color: #000000; font-size: 1em; font-family: "DejaVu Sans Condensed", Helvetica, Arial;}
+#smedia {width: 50%;}
+
+#lefCol { float:left; width:45%; padding:1em; background-color:#FFFFFF; color: #000000; border: double #000000 }
+#rigCol { float:left; width:45%; padding:1em; background-color:#FFFFFF; color: #000000; border: double #000000 }
+#footer { clear:both; padding:1em; background-color:#dbee00; font: normal 1.2em "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /* slightly enhanced, universal clearfix hack */
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/ * html .clearfix { height: 1%; }
+.clearfix { display: block; } /* close commented backslash hack */
+
+
+/*http://www.munkyonline.co.uk/web-design-articles-tutorials/css-3-column-layout.php*/
+
+/*To create the vertical columns (lefCol,rigCol) we need to apply float:left; to each of the divs. This will make them 'float' to the left edge of their container, which is the container div. When there are multiple floating divs, each div will float to the right side of the floating div preceding it. So as we have floated all of our divs to the left, they will all align next to each other from the left edge of #container, providing they don't extend beyond the width of #container. Otherwise a column may fall below the other columns rather than be along side them. You need to make sure the widths of the columns do not add up to more than 960px which is our defined page width. Our columns widths add up to 830px, remember to take into account the padding too, as I mentioned earlier, it will expand the width of the element.*/
+
+/*There is a bug in Mozilla browsers which requires us to use what is known as a Clearfix hack. Now this is caused because Mozilla browsers have an issue with floating elements and their container's height. When there are only floating elements within our #container div it cant resolve the height of the floating divs and so doesn't stretch to fit them. By applying the clearfix class the #container will expand to the height of it's floating divs.*/

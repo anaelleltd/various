@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+.clearfloat {
+font-size: 0px;
+margin: 0px;
+padding: 0px;
+clear: both;
+float: none;
+height: 0px;
+width: 0px;
+border: 0px none;
+line-height: 0px;
+}
+
+.container {
+	max-width: 1024px;
+	width: 100%;
+	height: auto;
+	margin: 0px auto; 
+	background-color: white;
+	color: maroon;
+}
+
+header {
+max-width: 1024px;
+width: 100%;
+height: 300px;
+max-height: 90%;
+margin: 0 auto;
+padding: 1% 0 5% 0;
+}
+
+header > img {
+max-width: 1024px;
+width: 100%;
+height: 300px;
+max-height: 90%;
+margin: 0 auto;
+padding: 1% 0 5% 0;
+}
+
+.menu {
+max-width: 220px;
+width: 100%;
+max-height: 50px;
+height: 100%;
+margin-left: -20px;
+padding-top: 20%;
+position: relative;
+list-style: none;
+float: left;
+}
+
+ul {
+max-width: 190px;
+width: 100%;
+height: 450px;
+margin: 0; 
+background-image: url(../images/kathaknav.jpg);
+background-size: contain;
+background-position: left; 
+background-attachment: scroll;
+background-repeat: no-repeat;
+}
+
+.intro {
+max-width: 1024px;
+width: 70%;
+height: auto;
+margin-top: -50%;
+margin-right: 2%;
+position: relative;
+float: right;
+}
+
+.intro_video {
+max-width: 1024px;
+width: 70%;
+height: auto;
+margin-top: 2%;
+position: relative;
+float: right;
+}
+
+.intro_video > iframe {
+max-width: 1024px;
+width: 90%;
+height: 350px;
+margin-top: 2%;
+position: relative;
+float: none;
+}
+
+
+h1 {
+	font-family: "Freestyle Script";
+	font-weight: bolder;
+	font-size: 5em;
+	color: black;
+}
+
+h2 {
+	font-family: "Freestyle Script", "Rage Italic";
+	font-size: 3em;
+	color: black;
+}
+
+h3 {
+	font-family: "Urdu Typesetting", "Freestyle Script", "Rage Italic";
+	font-size: 2em;
+	color: maroon;
+}
+
+p {
+	font-family: "Urdu Typesetting", "Myriad Pro", "DejaVu Sans Condensed";
+	font-size: 1em; 
+	padding-right: 1%;
+	color: maroon;
+}
+
+.origins {
+max-width: 1024px;
+width: 33%;
+height: 750px;
+margin-left: 30%;
+margin-right: 1%;
+margin-top: -45%;
+position: relative;
+float: left;
+}
+
+.developments {
+max-width: 1024px;
+width: 30%;
+height: 750px;
+margin-top: -45%;
+margin-right: 1%;
+position: relative;
+float: right;
+}
+
+.styles {
+max-width: 1024px;
+width: 100%;
+height: 560px;
+margin-top: 5%;	
+margin-right: 1%;
+position: relative;
+float: left;
+}
+
+.stylespics {
+padding: 1% 5%;
+}
+
+.preparation {
+max-width:1024px;
+width: 65%;
+height: 400px;
+margin-left: 30%;
+margin-right: 1%;
+margin-top: -48%;
+position: relative;
+float: right;
+}
+
+.practice {
+max-width:1024px;
+width: 65%;
+height: 750px;
+margin-right: 1%;
+position: relative;
+float: left;
+}
+
+.wrapup {
+max-width:1024px;
+width: 70%;
+height: 300px;
+margin-top: -20%;
+margin-right: 15px;
+position: relative;
+float: left;
+}
+
+.image1 { 
+width: auto;
+height: auto;
+margin-top: -85%;
+margin-left: 70%;
+margin-right: 1%;
+position: relative;
+float: left;
+}
+
+.image2 { 
+width: auto;
+height: auto;
+margin-top: -55%;
+margin-left: 70%;
+margin-right: 1%;
+position: relative;
+float: left;
+}
+
+
+.cultural {
+max-width: 1024px;
+width: 34%;
+height: 450px;
+margin-left: 30%;
+margin-top: -48%;
+margin-right: 1%;
+position: relative;
+float: left;
+}
+
+.physicalspiritual {
+max-width: 1024px;
+width: 33%;
+height: 990px;
+margin-top: 0%;
+margin-right: 1%;
+margin-left: 30%;
+position: relative;
+float: left;
+}
+
+
+.visuals {
+max-width: 1024px;
+width: 30%;
+height: 1250px;
+padding: 0px;
+margin-top: -48%;
+margin-left: 5%;
+margin-right: 1%;
+position: relative;
+float: right;
+}
+
+
+footer {
+margin: 0 auto; 
+margin-top: 3%;
+max-width: 1024px;
+width: 100%;
+max-height: 250px;
+height: 90%;
+position: relative;
+float: left;
+}
+
+footer > img {
+margin: 0 auto; 
+margin-top: 3%;
+max-width: 1024px;
+width: 100%;
+max-height: 250px;
+height: 90%;
+position: relative;
+float: left;
+}
+
+.contact {
+max-width: 1024px;
+width: 100%;
+max-height: 200px;
+height: 90%;
+font-family: "Urdu Typesetting", "Freestyle Script", "Rage Italic", "Myriam";
+margin-top: -15%;
+margin-left: 5%;
+position: relative;
+float: left;
+}
+
+
+#buttons { 
+max-width: 200px;
+width: 100%;
+max-height: 50px;
+height: 5%;
+margin-top: -7%;
+margin-left: 80%;
+}

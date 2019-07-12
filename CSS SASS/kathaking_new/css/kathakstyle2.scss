@@ -1,0 +1,230 @@
+﻿@charset "utf-8";
+@import "index";
+
+/* SCSS Document */
+
+#container {
+    @include containerposition;
+    @include containerstyle;
+    @include measurements(100%, auto);
+}
+
+
+#header {
+    @include headercontainer;
+    @include measurements(100%, 80%);
+
+}
+
+
+#nav {
+    @include navcontainer;
+    @include clearfloat;
+    @include measurements(100%, 100%);
+
+    ul {
+        background-image: url(../images/kathaknav.jpg);
+        background-size: contain;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+
+    .menu {
+        @include measurements(100%, 100%);
+        max-width: $box - 260;
+        max-height: $box/9;
+        margin-left: $margindefault * -6;
+        padding-top: $margindefault * 10;
+        list-style: none;
+    }
+}
+
+
+#footer {
+    @include headings;
+    @include footer-container;
+    @include measurements(100%, 100%);
+
+    img {
+        @include measurements(100%, 90%);
+    }
+
+    .contact {
+
+        a%placeholder {
+            background-color: $bglink;
+        }
+
+        font-size: $fontsizedefault;
+        font-family: $fontfamilydefault;
+        margin-top: $margindefault * -10;
+        margin-left: $margindefault * 5;
+    }
+
+
+    .buttons {
+        @extend .contact;
+
+        ul {
+            list-style: none;
+            margin-left: $margindefault * 70;
+
+            li {
+                display: inline;
+
+                a {
+                @extend %placeholder;
+                text-align: center;
+                padding: $margindefault;
+
+                &:hover {
+                    @if $sitemap == accessible {
+                        background-color: transparentize($titlecolor, 0.8);
+                    }
+                    @else if $sitemap == basic {
+                        background-color: opacify($pcolor, 1);
+                    }
+                }
+                ;
+
+                &:visited {
+                    color: $visited
+                }
+                ;
+                }
+            }
+        }
+    }
+}
+
+
+/*kathaking.html*/
+#main {
+    @include main-container;
+    @include headings;
+    @include paragraphs;
+    @include message("h1", "Vanakkam, Namaskaram.");
+    @include clearfloat;
+    @include measurements(65%, auto);
+
+    .intro {
+        @include measurements(90%, $boxpic);
+    }
+
+    .introvideo {
+        @include measurements(90%, $box * 1.77);
+        margin-top: $margindefault * 40;
+
+
+        #iframe {
+            @include measurements(90%, $boxpic + 50);
+            margin-left: $margindefault * 2;
+        }
+    }
+
+    aside {
+        @include aside-container;
+        @include clearfloat;
+        @include measurements(100%, $box * 1.77);
+    }
+}
+
+
+/*history.html*/
+.origins, .developments {
+    @include history-container;
+    @include history-pictures;
+    @include clearfloat;
+    @include measurements(45%, auto);
+
+    img {
+        @include measurements(60%, 60%);
+    }
+}
+
+.styles {
+    @include history-container;
+    @include clearfloat;
+    @include measurements(95%, auto);
+    margin-top: $margindefault * 50;
+    margin-bottom: $margindefault * 5;
+
+    img {
+        @include measurements(20%, 10%);
+        padding-left: $margindefault * 10;
+    }
+}
+
+
+/*training.html*/
+.preparation {
+    @include training-container;
+    @include clearfloat;
+    @include measurements(65%, $box);
+}
+
+.practice {
+    @extend .preparation;
+    margin-top: $margindefault * 5;
+}
+
+.wrapup {
+    @extend .preparation;
+    margin-top: $margindefault * 20;
+}
+
+.routines {
+    @include routines-container;
+    @include clearfloat;
+    @include measurements(100%, auto);
+    text-align: center;
+
+    @each $number in (1,2,3) {
+        .img_#{$number} {
+            border: $border;
+            border-color: $subtle;
+        }
+    }
+
+    img {
+        @include measurements(100%, 90%);
+    }
+
+    .img_1 {
+        margin: 1% 0 30% 0;
+    }
+
+    @each $number in (2,3) {
+        .img_#{$number} {
+            margin: 100% 0 1% 0;
+        }
+    }
+
+}
+
+
+/*benefits.html*/
+.cultural, .physical, .spiritual {
+    @include benefits-container;
+    @include clearfloat;
+    @include measurements(55%, auto);
+}
+
+.visuals {
+    @include visuals-container;
+    @include clearfloat;
+    @include measurements(100%, auto);
+
+
+    img {
+        @include measurements(75%, 95%);
+        padding-left: $margindefault * 5;
+    }
+}
+
+
+
+
+
+  

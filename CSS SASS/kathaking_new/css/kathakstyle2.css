@@ -1,0 +1,243 @@
+/*Links*/
+/*Pictures borders*/
+/*Sitemap settings: accessible or basic*/
+/*Links*/
+/*Pictures borders*/
+/*Sitemap settings: accessible or basic*/
+/* SCSS Document */
+/*! MIXINS
+    1. CONTAINER
+    2. HEADER
+    3. NAVIGATION
+    4. MAIN
+    5. FOOTER
+    6. TYPOGRAPHY
+    7. HTML PAGES (history, training, benefits)
+*/
+/*!1.CONTAINER*/
+/*!2.HEADER*/
+/*!3.NAVIGATION*/
+/*!4.MAIN*/
+/*!5.FOOTER*/
+/*!6.TYPOGRAPHY*/
+/*!7a.history.html*/
+/*!7b.training.html*/
+/*!7c.Benefits.html*/
+/* SCSS Document */
+#container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: auto; }
+
+#header {
+  max-width: 1024px;
+  max-height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  height: 80%; }
+
+#nav {
+  max-width: 250px;
+  max-height: 500px;
+  margin-left: 10%;
+  margin-top: 3%;
+  clear: none;
+  float: left;
+  width: 100%;
+  height: 100%; }
+  #nav ul {
+    background-image: url(../images/kathaknav.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat; }
+  #nav .menu {
+    width: 100%;
+    height: 100%;
+    max-width: 190px;
+    max-height: 50px;
+    margin-left: -6%;
+    padding-top: 10%;
+    list-style: none; }
+
+#footer {
+  color: black;
+  font-family: "Freestyle Script", "Urdu Typesetting", "Rage Italic";
+  max-width: 1024px;
+  max-height: 300px;
+  margin-left: 11.5%;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%; }
+  #footer h1 {
+    font-weight: bolder;
+    font-size: 5em; }
+  #footer h2 {
+    font-size: 3em;
+    color: #4d4d4d; }
+  #footer h3 {
+    font-size: 2em; }
+  #footer img {
+    width: 100%;
+    height: 90%; }
+  #footer .contact, #footer .buttons {
+    font-size: 1em;
+    font-family: "Myriad Pro", "DejaVu Sans Condensed";
+    margin-top: -10%;
+    margin-left: 5%; }
+    #footer .contact .buttons ul li a, #footer .buttons ul li .contact a, #footer .buttons ul li a {
+      background-color: #D1D1D1; }
+  #footer .buttons ul {
+    list-style: none;
+    margin-left: 70%; }
+    #footer .buttons ul li {
+      display: inline; }
+      #footer .buttons ul li a {
+        text-align: center;
+        padding: 1%; }
+        #footer .buttons ul li a:hover {
+          background-color: maroon; }
+        #footer .buttons ul li a:visited {
+          color: black; }
+
+/*kathaking.html*/
+#main {
+  max-width: 750px;
+  max-height: 1400px;
+  margin-top: 1.5%;
+  margin-left: 1%;
+  color: black;
+  font-family: "Freestyle Script", "Urdu Typesetting", "Rage Italic";
+  clear: none;
+  float: left;
+  width: 65%;
+  height: auto; }
+  #main h1 {
+    font-weight: bolder;
+    font-size: 5em; }
+  #main h2 {
+    font-size: 3em;
+    color: #4d4d4d; }
+  #main h3 {
+    font-size: 2em; }
+  #main p {
+    font-family: "Myriad Pro", "DejaVu Sans Condensed";
+    font-size: 1em;
+    margin-left: 1%;
+    color: maroon; }
+  #main h1:after {
+    content: "Vanakkam, Namaskaram.";
+    font-size: 0.5em;
+    color: rgba(128, 0, 0, 0.6); }
+  #main .intro {
+    width: 90%;
+    height: 300px; }
+  #main .introvideo {
+    width: 90%;
+    height: 796.5px;
+    margin-top: 40%; }
+    #main .introvideo #iframe {
+      width: 90%;
+      height: 350px;
+      margin-left: 2%; }
+  #main aside {
+    max-width: 220px;
+    margin-top: -100%;
+    clear: none;
+    float: left;
+    width: 100%;
+    height: 796.5px; }
+
+/*history.html*/
+.origins, .developments {
+  max-width: 1024px;
+  margin-left: 1%;
+  max-width: 450px;
+  max-height: 300px;
+  clear: none;
+  float: left;
+  width: 45%;
+  height: auto; }
+  .origins img, .developments img {
+    width: 60%;
+    height: 60%; }
+
+.styles {
+  max-width: 1024px;
+  margin-left: 1%;
+  clear: none;
+  float: left;
+  width: 95%;
+  height: auto;
+  margin-top: 50%;
+  margin-bottom: 5%; }
+  .styles img {
+    width: 20%;
+    height: 10%;
+    padding-left: 10%; }
+
+/*training.html*/
+.preparation, .practice, .wrapup {
+  max-width: 1024px;
+  clear: none;
+  float: left;
+  width: 65%;
+  height: 450px; }
+
+.practice {
+  margin-top: 5%; }
+
+.wrapup {
+  margin-top: 20%; }
+
+.routines {
+  max-width: 1024px;
+  margin-left: 10%;
+  margin-top: -85%;
+  clear: none;
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .routines .img_1 {
+    border: dotted 2px;
+    border-color: wheat; }
+  .routines .img_2 {
+    border: dotted 2px;
+    border-color: wheat; }
+  .routines .img_3 {
+    border: dotted 2px;
+    border-color: wheat; }
+  .routines img {
+    width: 100%;
+    height: 90%; }
+  .routines .img_1 {
+    margin: 1% 0 30% 0; }
+  .routines .img_2 {
+    margin: 100% 0 1% 0; }
+  .routines .img_3 {
+    margin: 100% 0 1% 0; }
+
+/*benefits.html*/
+.cultural, .physical, .spiritual {
+  max-width: 1024px;
+  clear: none;
+  float: left;
+  width: 55%;
+  height: auto; }
+
+.visuals {
+  max-width: 1024px;
+  margin-left: 20%;
+  margin-top: 1%;
+  clear: none;
+  float: left;
+  width: 100%;
+  height: auto; }
+  .visuals img {
+    width: 75%;
+    height: 95%;
+    padding-left: 5%; }

@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#container {
+	min-width: 300px;
+	max-width: 1250px;
+	margin: 0 auto;
+	font-family: "source-sans-pro";
+}
+
+#header {
+  min-width: 100%;
+  width: calc((15em - 100%) * 1000);
+  max-width: 100%;
+	margin: 0 auto;
+	padding: 1vw ;
+	color: white;
+	background-color: black;
+  /* Change 25em to your breakpoint. */
+}
+
+#header p {
+	font-family: sail;
+	font-size: 7vw;
+	text-align: center;
+}
+
+#header img {
+	min-width: 50%;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0.5vw;
+	flex: 1 0 15em;
+	justify-content: center;
+}
+
+#navpanel{
+  min-width: 100%;
+  width: calc((15em - 100%) * 1000);
+  max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	color: firebrick;
+	background-color: ghostwhite;
+}
+
+/* Fixed navigation starts here */
+ul {
+  margin: 0 auto;
+  padding: 0.5vw;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+	padding: 0.2vw 0.5vw;
+	background-color: ghostwhite;
+}
+a:focus {
+  outline: 0;
+}
+#navpanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4vw;
+  z-index: 9999;
+}
+#navpanel ul {
+  text-align: left;
+  display: inline;
+}
+#navpanel ul li {  
+  display: inline-block;
+  margin: 0vw;
+  position: relative;
+}
+#navpanel ul li:last-child {
+  margin: 0;
+}
+#navpanel ul li a {
+  background-color: ghostwhite;
+  color: firebrick;
+  display: block;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 1vw;
+}
+
+#navpanel ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Sub menu class = "sub"
+#navpanel ul li ul {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+#navpanel ul li ul li { 
+  display: block; 
+  width: 140px;
+  margin: 0;
+} 
+#navpanel ul li.sub ul li a:hover {
+  background-color: #333 !important;
+}
+#menu .sub.open ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}*/
+
+/* Fixed navigation ends here*/
+
+#contentpanel {
+  min-width: 90%;
+  width: calc((15em - 100%) * 1000);
+  max-width: 100%;
+	padding: 1vw;
+	margin: 0 auto;
+  background-color: ghostwhite;
+}
+
+#footer {
+  min-width: 100%;
+  width: calc((15em - 100%) * 1000);
+  max-width: 100%;
+	margin: 0 auto;
+	padding: 1%;
+	color: white;
+	background-color: black;
+}
+
+#footer p, #footer h2 {
+	font-family: "aguafina-script", "kaushan-script";
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+#footer a {
+	background-color: lightgrey;
+	padding: 0.5vw;
+}
+
+h1 {
+	font-size: 5vw;
+	font-family: sail, "aguafina-script", "kaushan-script";
+}
+
+h2 {
+	font-size: 3.5vw;
+	font-family: sail, "aguafina-script", "kaushan-script";
+}
+
+h3 {
+	font-size: 2.5vw;
+	font-family: "aguafina-script";
+}
+
+p {
+  font-size: 2vw;
+}
+
+#contentpanel blockquote {
+	padding: 2%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2vw;
+	font-family: "aguafina-script";
+}
+
+button {
+	width: 15%;
+	padding: 0.5vw;
+	margin: 2% 45%;
+	border-radius: 15%;
+	font-family: "Myriad Pro";
+	font-size: 1vw;
+	color: black;
+	background-color: lightgrey;
+}
+
+.shading {
+	width: 90%;
+	color: black;
+	background: lightgrey;
+}
+
+table {
+	min-width: 60%;
+	width: calc((15em - 100%) * 1000);
+	max-width: 100%;
+	padding: 2%;
+	margin: 0 auto;
+	display: table;
+	border: solid 0.2vw black;
+	font-size: 2vw;
+	font-family: "aguafina-script";
+	text-align: left;
+}
+
+#definitions {
+	min-width: 60%;
+	width: calc((15em - 100%) * 1000);
+	max-width: 100%;
+	padding: 1%;
+	margin: 0 auto;
+	font-size: 2vw;
+	font-family: "aguafina-script";
+	text-align: left;
+}
+
+@media only screen and (min-width: 590px) /* wide */{
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	min-width: 100%;
+	width: calc((15em - 100%) * 1000);
+	max-width: 110%;
+	color: black;
+	background-color: ghostwhite;
+	
+}
+
+.intro img {
+	min-width: 10%;
+	max-width: 50%;
+	height: auto;
+	padding: 1%;
+	flex: 1 0 15em;
+	justify-content: space-around;
+}
+
+.introtext {
+	min-width: 10%;
+	max-width: 50%;
+	height: auto;
+	padding: 1%;
+	flex: 2 0 15em;
+	justify-content: space-around;
+}
+}
+
+@media only screen and (max-width: 590px) /* Narrow */{
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 100%;
+	width: calc((15em - 100%) * 1000);
+	max-width: 110%;
+	color: black;
+	background-color: ghostwhite;
+	
+}
+
+.intro img {
+	max-width: 100%;
+	height: auto;
+	padding: 1%;
+	flex: 1 0 15em;
+	justify-content: space-around;
+}
+
+.introtext {
+	max-width: 100%;
+	height: auto;
+	padding: 1%;
+	flex: 2 0 15em;
+	justify-content: space-around;
+}
+}

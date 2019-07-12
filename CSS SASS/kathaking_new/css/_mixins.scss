@@ -1,0 +1,148 @@
+﻿@charset "utf-8";
+@import "variables";
+
+/* SCSS Document */
+
+/*! MIXINS
+    1. CONTAINER
+    2. HEADER
+    3. NAVIGATION
+    4. MAIN
+    5. FOOTER
+    6. TYPOGRAPHY
+    7. HTML PAGES (history, training, benefits)
+*/
+/*!1.CONTAINER*/
+@mixin containerposition {
+    max-width: $bodywidth;
+    margin: 0 auto;
+}
+
+@mixin containerstyle {
+    background-color: $bgcolor;
+    color: $titlecolor;
+}
+
+@mixin clearfloat {
+    clear: none;
+    float: left;
+}
+
+@mixin measurements($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*!2.HEADER*/
+@mixin headercontainer {
+    max-width: $bodywidth;
+    max-height: $boxpic;
+    margin: 0 auto;
+}
+
+/*!3.NAVIGATION*/
+@mixin navcontainer {
+    max-width: $box - 200;
+    max-height: $bodywidth - 524px;
+    margin-left: $margindefault * 10;
+    margin-top: $margindefault * 3;
+}
+
+
+/*!4.MAIN*/
+@mixin main-container {
+    max-width: $box + 300;
+    max-height: $boxlarge;
+    margin-top: $margindefault * 1.5;
+    margin-left: $margindefault;
+}
+
+@mixin message($selector, $message) {
+    #{$selector}:after {
+        content: $message;
+        font-size: $fontsizedefault * 0.5;
+        color: transparentize($pcolor, 0.4);
+    }
+}
+
+@mixin aside-container {
+    max-width: $box - 230;
+    margin-top: $margindefault * -100;
+}
+
+/*!5.FOOTER*/
+@mixin footer-container {
+    max-width: $bodywidth;
+    max-height: $boxpic;
+    margin-left: $margindefault * 11.5;
+    margin-top: $margindefault * 2;
+}
+
+
+/*!6.TYPOGRAPHY*/
+@mixin headings {
+    color: $titlecolor;
+    font-family: $titlefontfamily;
+
+    h1 {
+        font-weight: bolder;
+        font-size: $fontsizedefault * 5;
+    }
+
+    h2 {
+        font-size: $fontsizedefault * 3;
+        color: lighten($titlecolor, 30%);
+    }
+
+    h3 {
+        font-size: $fontsizedefault * 2;
+    }
+}
+
+@mixin paragraphs {
+
+    p {
+        font-family: $fontfamilydefault;
+        font-size: $fontsizedefault;
+        margin-left: $margindefault;
+        color: $pcolor;
+    }
+}
+
+/*!7a.history.html*/
+@mixin history-container {
+    max-width: $bodywidth;
+    margin-left: $margindefault;
+}
+
+@mixin history-pictures {
+    max-width: $box;
+    max-height: $boxpic;
+}
+
+/*!7b.training.html*/
+@mixin training-container {
+    max-width: $bodywidth;
+}
+
+@mixin routines-container {
+    max-width: $bodywidth;
+    margin-left: $margindefault * 10;
+    margin-top: $margindefault * -85;
+}
+
+
+/*!7c.Benefits.html*/
+@mixin benefits-container {
+    max-width: $bodywidth;
+}
+
+@mixin visuals-container {
+    max-width: $bodywidth;
+    margin-left: $margindefault * 20;
+    margin-top: $margindefault;
+
+}
+
+
+

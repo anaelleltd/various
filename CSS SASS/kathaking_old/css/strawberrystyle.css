@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-image: url(../images/strawberriesbg.jpg)}
+.container {margin: 0 auto; max-width: 1200px;  width: 100%; height: auto;}
+header {height:200px; align-content: center; text-align: center}
+header img {width: 15%; height: auto; margin: -12.5% 0 0 40%; align-content: center; float: left}
+#header a {font-size: 0.1em; float: left; margin-top: 5%; margin-left:-50% ;position: relative; background-color: white}
+#header a:hover {color: hotpink}
+#header {font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; padding: 50px; font-size:5em; text-transform: capitalize; color: darkred}
+
+ul li {max-width: 100%; width: 10%; margin: 0 auto; padding: 2% 5%; list-style:none; font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; font-weight: bolder; font-size: 1.5em; text-align: center; float: left; position: relative;}
+a {background-color: hotpink}
+a:hover {color: white}
+p {clear: both} 
+
+
+main {max-width: 1200px; width: 100%; margin: 0 auto; font-size: 0.9em; padding-top: 2%; font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";}
+#aside1 {max-width: 380px; width: 95%; height: auto; margin: 0 auto; padding-top: 1%; padding-bottom: 1%; font-size: 0.9em; color: #C51B1E; font-weight: bold; font-variant: small-caps; float: left; position: relative;}
+section {max-width: 800px; width: 90%; height: auto; margin: 4% 0 2% 0; padding-left:  0.5%; background-color: hotpink; float: right; position: relative;}
+
+h2 {font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-size: 1.4em; font-weight: bold; font-style: italic}
+h3 {font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-size: 1.2em; font-style: italic;}
+h3 {font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-size: 1em; font-weight: bolder; font-variant-caps: petite-caps;}
+
+.artitle {font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-size: 1.5em; color: deeppink; background-color: white; font: bolder}
+
+#article1 {max-width: 450px; width: 90%; height:auto; margin: 0 auto; padding: 1%; font-size: 0.8em;  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; align-content: center; float:left; position: relative;}
+
+#article2 {max-width: 250px; width: 90%; height:auto; margin: 0 auto; padding: 1%; font-size: 0.8em; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; align-content: center;  float: left; position: relative;}
+
+#aside2 {max-width: 380px; width: 95%; height: auto; margin: 0 auto; padding-top: 0.5%; font-size: 0.9em; color: #C51B1E; font-weight: bold; font-variant: small-caps; float: left; position: relative;}
+
+#form1 {max-width: 450px; width: 90%; height:auto; margin: 0 auto; padding: 0.5%; font-size: 0.8em;  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; align-content: center;}
+
+footer {max-width: 1200px; width: 100%; height: auto; padding: 1%; margin-top: 10px; margin-bottom: 10px; text-align:center; align-content: center; font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"; font-size: 20px; color: darkred; word-spacing: 2px; float: left}
+
+
+
